@@ -1,4 +1,4 @@
-package com.example.spring.boot;
+package org.example.spring.boot;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
