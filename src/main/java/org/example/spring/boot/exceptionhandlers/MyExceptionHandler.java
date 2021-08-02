@@ -1,4 +1,4 @@
-package org.example.spring.boot;
+package org.example.spring.boot.exceptionhandlers;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

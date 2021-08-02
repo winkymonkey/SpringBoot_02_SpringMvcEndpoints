@@ -1,4 +1,4 @@
-package org.example.spring.boot;
+package org.example.spring.boot.controllers;
 
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.web.bind.annotation.GetMapping;

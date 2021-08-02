@@ -1,5 +1,6 @@
-package org.example.spring.boot;
+package org.example.spring.boot.controllers;
 
+import org.example.spring.boot.models.Student;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;

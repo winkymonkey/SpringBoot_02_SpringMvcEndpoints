@@ -1,4 +1,4 @@
-package org.example.spring.boot;
+package org.example.spring.boot.filters;
 
 import java.io.IOException;
 
@@ -10,6 +10,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
 import org.springframework.stereotype.Component;
+
 
 @Component
 public class MyFilter implements Filter {
@@ -27,6 +28,7 @@ public class MyFilter implements Filter {
 
 	@Override
 	public void init(FilterConfig filterconfig) throws ServletException {
+		//
 	}
 	
 }
