@@ -1,6 +1,8 @@
 package org.example.spring.boot.controllers;
 
 import org.example.spring.boot.models.Student;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -77,4 +79,22 @@ public class MyRestController {
 		return st;
 	}
 	
+	
+	/**
+	 * ----------------------------------------------------
+	 * URL: http://localhost:8080/v1/main/endpoint5
+	 * Send this JSON in request body {"name":"TOM", "id":"123"}
+	 * ----------------------------------------------------
+	 */
+	@PostMapping("/endpoint5")
+	@ResponseBody
+	public ResponseEntity<Student> endpoint5(@RequestBody Student student) {
+		System.out.println("received student="+student);
+		Student st = new Student();
+		st.setName("HARRY");
+		st.setId("000");
+		return ResponseEntity.status(HttpStatus.OK)
+							.header("testHeaderKey1", "testHeaderVal1")
+							.body(st);
+	}
 }
